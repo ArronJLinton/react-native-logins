@@ -184,7 +184,7 @@ class MyClass extends Component {
     try {
       await GoogleSignin.hasPlayServices({ autoResolve: true });
       await GoogleSignin.configure({
-        iosClientId: '165636776764-5mb80g8um9hhl5j3vqpq431udcg1sg7t.apps.googleusercontent.com',
+        iosClientId: process.env.google_client,
        
         offlineAccess: false
       });
